@@ -19,7 +19,7 @@ namespace DiplomaProject
             int result = SearchHelper.Search(b);
             Console.WriteLine(result);
 
-            Console.ReadKey();
+            Console.ReadKey();   
         }
     }
 }

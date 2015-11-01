@@ -16,6 +16,7 @@ namespace DiplomaProject
 
         static public int Search<T>(List<T> subsequence)
         {
+            //если всё готово, то тут мы за линейное время выполняем проверку.
             int positionOfEntry = 0;
             return positionOfEntry;
         }
