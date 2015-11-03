@@ -8,14 +8,13 @@ namespace DiplomaProject
 {
     public class Node
     {
-        public Node Parent;
+        public Node Parent = null;
         public List<Node> Children;
         public int PositionInText;
         public Node( )
         {
 
         }
-
         public Node(int index)
         {
             PositionInText = index;

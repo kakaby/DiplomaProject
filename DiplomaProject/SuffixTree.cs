@@ -8,5 +8,6 @@ namespace DiplomaProject
 {
     public class SuffixTree
     {
+        //TODO
     }
 }

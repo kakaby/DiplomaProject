@@ -10,7 +10,7 @@ namespace DiplomaProject
     {                                 
         static public int Search<T>(List<T> subsequence, SuffixTree tree)
         {
-            //если всё готово, то тут мы за линейное время выполняем проверку.
+            //TODO
             int positionOfEntry = 0;
             return positionOfEntry;
         }
