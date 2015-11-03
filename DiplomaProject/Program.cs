@@ -19,14 +19,14 @@ namespace DiplomaProject
             int result = SearchHelper.Search(b, tree);
             Console.WriteLine(result);
             //
-            Node sq = new Node(6);
-            sq.Children = new List<Node>();
-            sq.Children.Add(new Node(ref sq, 7));
-            //
-            foreach (var elem in sq.Children)
+            Node parent = new Node(5);
+            Node son = new Node(ref parent, 9);
+            parent.AddChildren(ref son);
+            foreach (var child in parent.GetChildren())
             {
-                Console.WriteLine(elem.PositionInText);
+                Console.WriteLine(child.GetParent().GetPositionInText());
             }
+            //
             Console.ReadKey();   
         }
     }
