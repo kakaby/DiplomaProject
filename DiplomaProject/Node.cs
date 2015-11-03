@@ -11,12 +11,15 @@ namespace DiplomaProject
         public Node Parent;
         public List<Node> Children;
         public int PositionInText;
-
-        public Node()
+        public Node( )
         {
-            
+
         }
 
+        public Node(int index)
+        {
+            PositionInText = index;
+        }
         public Node(ref Node parent, int index)
         {
             Parent = parent;
