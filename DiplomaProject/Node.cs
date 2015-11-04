@@ -11,52 +11,64 @@ namespace DiplomaProject
     {
         Node _parent = null;
         List<Node> _children = new List<Node>();
-        int _positionInText;
+        public int PositionOfSymbolInText { get; set; }
+        public int IndexStartSubsequence { get; set; }
+        public int IndexEndSubsequence { get; set; }
+        public int IndexInAlbhabet { get; set; }
+
         public Node( ) { }
+
         public Node( int positionInText )
         {
-            _positionInText = positionInText;
+            _positionOfSymbolInText = positionInText;
         }
-        public Node( ref Node parent, ref List<Node> children, int positionInText )
+
+        public Node( ref Node parent, ref List<Node> children)
         {
             _parent = parent;
             _children = children;
-            _positionInText = positionInText;
         }
-        public Node( ref List<Node> children, int positionInText )
+
+        public Node( ref List<Node> children)
         {
             _children = children;
-            _positionInText = positionInText;
         }
-        public Node( ref Node parent, int positionInText )
+
+        public Node( ref Node parent)
         {
             _parent = parent;
-            _positionInText = positionInText;
         }
+
         public Node GetParent()
         {
             return _parent;
         }
+
         public void SetParent(ref Node parent)
         {
             _parent = parent;
         }
+
         public int GetPositionInText()
         {
-            return _positionInText;
+            return _positionOfSymbolInText;
         }
+
         public void SetPositionInText(int position)
         {
-            _positionInText = position;
+            _positionOfSymbolInText = position;
         }
+
         public List<Node> GetChildren()
         {
             return _children;
         }
+
         public void AddChildren(ref Node node)
         {
             _children.Add(node);
         }
+
         public void AddChildren(ref List<Node> nodes)
         {
             _children.AddRange(nodes);

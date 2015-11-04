@@ -44,7 +44,6 @@
     <Compile Include="DataTypes\CatType.cs" />
     <Compile Include="DataTypes\CharType.cs" />
     <Compile Include="DataTypes\IntType.cs" />
-    <Compile Include="Edge.cs" />
     <Compile Include="Node.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
